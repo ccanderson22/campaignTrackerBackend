@@ -5,7 +5,8 @@ const Schema = mongoose.Schema;
  * 
  */
 const campaignSchema = new Schema({
-    name: {type: String, required: true, unique: true, default: 'Default'},
+    name: {type: String, required: true, default: 'Default'},
+    players: {type: [String], required: true, default: ['No players yet']},
     // events: {type: [Object], required: true, default: []},
     // regions: {type: [Object], required: true, default: []},
     // locations: {type: [Object], required: true, default: []},
